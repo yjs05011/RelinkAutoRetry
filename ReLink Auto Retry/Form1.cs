@@ -8,9 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 namespace ReLink_Auto_Retry
 {
+
     public partial class Form1 : Form
     {
         private bool isRun = false;
@@ -25,28 +29,35 @@ namespace ReLink_Auto_Retry
 
         }
 
+
         private void StartBtn_Click(object sender, EventArgs e)
         {
             isRun = true;
+            Program.CheckKey = false;
+
+            Console.WriteLine(Program.filePath);
+
             Run();
         }
 
-        private void Run()
+        private async void Run()
         {
-            while(isRun)
-            {             
-                Console.WriteLine(isRun);
-                Thread.Sleep(500);
-            }
+            var task = Task.Run(() =>
+            {
+                while (isRun)
+                {
+                    if (Program.CheckKey)
+                    {
+                        isRun = false;
+                    }
+                    SendKeys.SendWait("a");
+                    Console.WriteLine("working");
+                    Thread.Sleep(500);
+                    
+                }
+                
+            });
         }
 
-        private void Stop(object sender, KeyEventArgs e)
-        {
-            if(e.KeyCode == Keys.A)
-            {
-                Console.WriteLine("isRun");
-                isRun = false;
-            }
-        }
     }
 }

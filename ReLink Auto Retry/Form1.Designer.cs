@@ -31,6 +31,7 @@ namespace ReLink_Auto_Retry
         {
             this.TitleLabel = new System.Windows.Forms.Label();
             this.StartBtn = new System.Windows.Forms.Button();
+            this.DescLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TitleLabel
@@ -45,7 +46,7 @@ namespace ReLink_Auto_Retry
             // 
             // StartBtn
             // 
-            this.StartBtn.Location = new System.Drawing.Point(16, 6);
+            this.StartBtn.Location = new System.Drawing.Point(546, 23);
             this.StartBtn.Name = "StartBtn";
             this.StartBtn.Size = new System.Drawing.Size(112, 48);
             this.StartBtn.TabIndex = 1;
@@ -53,17 +54,28 @@ namespace ReLink_Auto_Retry
             this.StartBtn.UseVisualStyleBackColor = true;
             this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
             // 
+            // DescLabel
+            // 
+            this.DescLabel.AutoSize = true;
+            this.DescLabel.Font = new System.Drawing.Font("굴림", 30F);
+            this.DescLabel.Location = new System.Drawing.Point(12, 128);
+            this.DescLabel.Name = "DescLabel";
+            this.DescLabel.Size = new System.Drawing.Size(614, 40);
+            this.DescLabel.TabIndex = 2;
+            this.DescLabel.Text = "종료 하고 싶으면 K를 눌러주세요";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DescLabel);
             this.Controls.Add(this.StartBtn);
             this.Controls.Add(this.TitleLabel);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Stop);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -73,6 +85,7 @@ namespace ReLink_Auto_Retry
 
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.Button StartBtn;
+        private System.Windows.Forms.Label DescLabel;
     }
 }
 
