@@ -29,13 +29,50 @@ namespace ReLink_Auto_Retry
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.TitleLabel = new System.Windows.Forms.Label();
+            this.StartBtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // TitleLabel
+            // 
+            this.TitleLabel.AutoSize = true;
+            this.TitleLabel.Font = new System.Drawing.Font("굴림", 15F);
+            this.TitleLabel.Location = new System.Drawing.Point(12, 9);
+            this.TitleLabel.Name = "TitleLabel";
+            this.TitleLabel.Size = new System.Drawing.Size(116, 20);
+            this.TitleLabel.TabIndex = 0;
+            this.TitleLabel.Text = "리링크 오토";
+            // 
+            // StartBtn
+            // 
+            this.StartBtn.Location = new System.Drawing.Point(16, 6);
+            this.StartBtn.Name = "StartBtn";
+            this.StartBtn.Size = new System.Drawing.Size(112, 48);
+            this.StartBtn.TabIndex = 1;
+            this.StartBtn.Text = "시작";
+            this.StartBtn.UseVisualStyleBackColor = true;
+            this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.StartBtn);
+            this.Controls.Add(this.TitleLabel);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Stop);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label TitleLabel;
+        private System.Windows.Forms.Button StartBtn;
     }
 }
 

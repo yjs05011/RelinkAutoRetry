@@ -1,0 +1,10 @@
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\bin\Debug\ReLink Auto Retry.exe.config
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\bin\Debug\ReLink Auto Retry.exe
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\bin\Debug\ReLink Auto Retry.pdb
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\obj\Debug\ReLink Auto Retry.csproj.AssemblyReference.cache
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\obj\Debug\ReLink_Auto_Retry.Form1.resources
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\obj\Debug\ReLink_Auto_Retry.Properties.Resources.resources
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\obj\Debug\ReLink Auto Retry.csproj.GenerateResource.cache
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\obj\Debug\ReLink Auto Retry.csproj.CoreCompileInputs.cache
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\obj\Debug\ReLink Auto Retry.exe
+C:\Users\안재욱\Source\Repos\yjs05011\RelinkAutoRetry\ReLink Auto Retry\obj\Debug\ReLink Auto Retry.pdb
